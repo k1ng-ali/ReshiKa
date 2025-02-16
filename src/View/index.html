@@ -9,7 +9,8 @@
     <div class="authentication-container">
         <div class="login-button-container">
             <div class="login-button">
-                <a class="login-button-link" href="#">login</a>
+                <a class="login-button-link" href="#"
+                onclick="this.style.background=' #f4f4f4'">login</a>
             </div>
             <div class="signup-button">
                 <a class="signup-button-link" href="#">signup</a>
@@ -18,10 +19,14 @@
         <div class="login-form-container">
             <H1 class="forum-title">Welcome back</H1>
             <h3 class="user-name-text">username</h3>
-            <fieldset class="user-name-fieldset"></fieldset>
+            <label class="label">
+                <input type="text" class="user-name-fieldset">
+            </label>
             <h3 class="password-text">password</h3>
-            <fieldset class="password-fieldset"></fieldset>
-            <button class="form-login-button">login</button>
+            <label class="label">
+                <input type="password" class="password-fieldset">
+            </label>
+            <button onclick="window.location.href='home.html'" class="form-login-button">login</button>
         </div>
     </div>
     <div class="description-container">

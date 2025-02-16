@@ -119,11 +119,17 @@
     margin-bottom: 10px;
 }
 
+.label {
+    display: flex;
+    width: 100%;
+}
+
 .user-name-fieldset {
     display: flex;
+    width: 100%;
     margin-left: 30px;
     margin-right: 30px;
-    height: 20px;
+    height: 30px;
     border: #b5b5b5 solid 1px;
     border-radius: 7px;
     box-shadow: 1px 1px 2px #eaeaea;
@@ -139,10 +145,11 @@
 
 .password-fieldset {
     display: flex;
+    width: 100%;
     margin-left: 30px;
     margin-right: 30px;
     margin-bottom: 30px;
-    height: 20px;
+    height: 30px;
     border: #b5b5b5 solid 1px;
     border-radius: 7px;
     box-shadow: 1px 1px 2px #eaeaea;
