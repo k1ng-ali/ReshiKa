@@ -1,0 +1,1 @@
+const doc = document.getElementById('body');
