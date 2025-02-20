@@ -13,8 +13,8 @@
 .authentication-container, .description-container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 50%;
     height: 100%;
 }
@@ -30,8 +30,13 @@
     }
     .authentication-container {
         width: 100%;
-        min-width: 550px;
+        min-width: 250px;
     }
+}
+
+.description {
+    display: flex;
+    transform: translateY(-7vh);
 }
 
 .login-button-container {
@@ -46,6 +51,7 @@
     background-color: #f4f4f4;
     border: #eaeaea solid 1px;
     border-radius: 10px;
+    transform: translateY(-7vh);
 }
 
 .login-button {
@@ -62,7 +68,7 @@
 
 .login-button-link {
     color: black;
-    font-size: larger;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -90,7 +96,7 @@
 
 .signup-button-link {
     color: black;
-    font-size: larger;
+    font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
 }
@@ -104,11 +110,13 @@
     border-radius: 10px;
     max-width: 500px;
     box-shadow: 1px 1px 2px #eaeaea;
+    transform: translateY(-7vh);
 }
 
 .forum-title {
     display: flex;
     margin-left: 30px;
+    font-size: 1.5rem;
 }
 
 .user-name-text {
@@ -116,6 +124,7 @@
     margin-left: 30px;
     margin-right: 30px;
     font-weight: normal;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -140,6 +149,7 @@
     margin-left: 30px;
     margin-right: 30px;
     font-weight: normal;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -164,7 +174,7 @@
     margin-right: 30px;
     color: white;
     font-weight: bold;
-    font-size: larger;
+    font-size: 1rem;
     height: 50px;
     border-radius: 10px;
     margin-top: 8px;
