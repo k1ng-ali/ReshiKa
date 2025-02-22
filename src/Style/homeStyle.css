@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    min-height: 500px;
+    margin: 0;
 }
 
 
@@ -46,9 +46,19 @@
     text-decoration: none;
 }
 
+.logo {
+    font-size: 1.5rem;
+}
+
 .nav-list {
     display: flex;
     flex-direction: row;
+}
+
+.auth-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .auth {
@@ -59,38 +69,42 @@
 .user-name {
     display: flex;
     margin-left: 5px;
+    font-size: 1.2rem;
 }
 
 .secondHeader {
     position: fixed;
+    display: flex;
+    justify-content: center;
     width: 90%;
     max-width: 950px;
+    margin-top: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 150px;
-    margin-right: 20px;
-    margin-left: 20px;
     background-color: white;
     overflow: hidden;
     z-index: 2;
 }
 
 .secondHeader-container {
-    width: 100%;
-    position: absolute;
-    top: 80px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 70px;
+    width: 100%;
 }
 
 .title {
     display: flex;
+    font-size: 1.5rem;
 }
 
 .create-content {
     display: flex;
-    width: 30%;
+    width: 135px;
     align-items: center;
     flex-direction: row-reverse;
+    font-size: 1.2rem;
 }
 
 .create-content-button {
@@ -110,25 +124,21 @@
 }
 
 .container {
-    position: relative;
      display: flex;
      justify-content: space-between;
      width: 90%;
      max-width: 950px;
-     margin-top: 100px;
+     margin-top: 150px;
+    padding-left: 10px;
+    padding-right: 10px;
  }
-
-.content-header {
-    display: flex;
-    width: 70%;
-}
 
 .content-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 70px;
-    margin-left: 10px;
+    max-width: 650px;
+    min-width: 170px;
     width: 100%;
 }
 
@@ -139,8 +149,7 @@
     background-color: #ffffff;
     border-radius: 10px;
     padding: 10px;
-    width: 100%;
-    min-width: 170px;
+    width: 95%;
     margin-top: 20px;
     box-shadow: 2px 2px 4px #b5b5b5;
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
@@ -153,6 +162,7 @@
 
 .task-title {
     display: flex;
+    font-size: 1.2rem;
 }
 
 .task-user{
@@ -168,7 +178,7 @@
     padding-left: 7px;
     padding-right: 7px;
     padding-bottom: 3px;
-    font-size: 15px;
+    font-size: 0.8rem;
     margin-top: 7px;
     margin-bottom: 7px;
 }
@@ -178,7 +188,7 @@
     color: dimgrey;
     font-weight: inherit;
     margin-left: 10px;
-    font-size: 15px;
+    font-size: 0.8rem;
     margin-top: 7px;
     margin-bottom: 7px;
 }
@@ -186,6 +196,7 @@
 .task {
     color: dimgrey;
     margin-top: 0;
+    font-size: 1rem;
 }
 
 .task-info {
@@ -195,4 +206,23 @@
     margin-right: 15px;
     color: dimgrey;
     font-size: 15px;
+}
+
+.task-data {
+    font-size: 0.8rem;
+}
+
+.answers {
+    font-size: 0.8rem;
+}
+
+@media (max-width: 700px) {
+    .nav-element{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .auth {
+        display: none;
+    }
 }
