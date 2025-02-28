@@ -37,6 +37,8 @@
 .description {
     display: flex;
     transform: translateY(-7vh);
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .login-button-container {
@@ -46,59 +48,37 @@
     align-items: center;
     width: 70%;
     max-width: 500px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     background-color: #f4f4f4;
     border: #eaeaea solid 1px;
     border-radius: 10px;
     transform: translateY(-7vh);
 }
 
-.login-button {
+.btn {
     display: flex;
-    width: 47%;
-    background-color: white;
+    width: 90%;
+    border: none;
     border-radius: 7px;
     padding-top: 8px;
     padding-bottom: 8px;
     align-items: center;
     justify-content: center;
+    margin: 5px;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.active-btn {
+    background-color: white;
     box-shadow: 1px 1px 2px #bfbfbf;
 }
 
-.login-button-link {
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.login-button:active {
+.non-active-btn {
     background-color: #f4f4f4;
-    border-color: #f4f4f4;
-    border-radius: 7px;
-}
-
-.signup-button {
-    display: flex;
-    width: 47%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    align-items: center;
-    justify-content: center;
-}
-
-.signup-button:active {
-    background-color: #f4f4f4;
-    border-color: #bfbfbf;
-    border-radius: 7px;
-}
-
-.signup-button-link {
-    color: black;
-    font-size: 1rem;
-    font-weight: bold;
-    text-decoration: none;
 }
 
 .login-form-container {
@@ -111,15 +91,16 @@
     max-width: 500px;
     box-shadow: 1px 1px 2px #eaeaea;
     transform: translateY(-7vh);
+    max-height: 700px;
 }
 
-.forum-title {
+.form-title {
     display: flex;
     margin-left: 30px;
     font-size: 1.5rem;
 }
 
-.user-name-text {
+.fieldset-title {
     display: flex;
     margin-left: 30px;
     margin-right: 30px;
@@ -133,32 +114,11 @@
     width: 100%;
 }
 
-.user-name-fieldset {
+.fieldset {
     display: flex;
     width: 100%;
     margin-left: 30px;
     margin-right: 30px;
-    height: 30px;
-    border: #b5b5b5 solid 1px;
-    border-radius: 7px;
-    box-shadow: 1px 1px 2px #eaeaea;
-}
-
-.password-text {
-    display: flex;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-weight: normal;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.password-fieldset {
-    display: flex;
-    width: 100%;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 30px;
     height: 30px;
     border: #b5b5b5 solid 1px;
     border-radius: 7px;
@@ -177,9 +137,8 @@
     font-size: 1rem;
     height: 50px;
     border-radius: 10px;
-    margin-top: 8px;
+    margin-top: 50px;
     margin-bottom: 30px;
-    transition: background-color 0.3s ease-in-out;
 }
 
 .form-login-button:hover {

@@ -8,29 +8,31 @@
 <body class="body">
     <div class="authentication-container">
         <div class="login-button-container">
-            <div class="login-button">
-                <a class="login-button-link" href="#"
-                onclick="this.style.background=' #f4f4f4'">login</a>
-            </div>
-            <div class="signup-button">
-                <a class="signup-button-link" href="#">signup</a>
-            </div>
+            <button class="btn active-btn login-btn" id="login-btn">Login
+            </button>
+            <button class="btn non-active-btn register-btn" id="register-btn">
+                Signup
+            </button>
         </div>
         <div class="login-form-container">
-            <H1 class="forum-title">Welcome back</H1>
-            <h3 class="user-name-text">username</h3>
+            <H1 class="form-title" id="form-title">Welcome back</H1>
+            <h3 class="fieldset-title">username</h3>
             <label class="label">
-                <input type="text" class="user-name-fieldset">
+                <input type="text" class="fieldset user-name" id="username">
             </label>
-            <h3 class="password-text">password</h3>
+            <h3 class="fieldset-title">password</h3>
             <label class="label">
-                <input type="password" class="password-fieldset">
+                <input type="password" class="fieldset password" id="password">
             </label>
-            <button onclick="window.location.href='home.html'" class="form-login-button">login</button>
+            <h3 class="fieldset-title" id="repeat-pass-title" style="display: none">repeat password</h3>
+            <label class="label" id="repeat-password-label" style="display: none">
+                <input type="password" class="fieldset repeat-password" id="repeat-password">
+            </label>
+            <button class="form-login-button" id="log-sign-btn">login</button>
         </div>
     </div>
     <div class="description-container">
-        <h2 class="description">jasdsadsdas</h2>
+        <h2 class="description">Join our community of problem solvers. Share your challenges, find solutions, and help others learn. Track your progress and build your reputation through helpful contributions.</h2>
     </div>
     <script src="../Controll/indexScript.js"></script>
 </body>
