@@ -16,11 +16,11 @@
             </ul>
             </div>
             <div class="auth-container">
-                <p class="auth" id="auth">Logged in as </p><strong class="user-name">UserName</strong>
+                <p class="auth" id="auth">Logged in as </p><strong class="user-name" id="user-name">UserName</strong>
             </div>
         </nav>
     </header>
-    <header class="secondHeader">
+    <header class="secondHeader" id="secondHeader">
         <div class="secondHeader-container">
             <h2 class="title" id="title">Tasks</h2>
             <div id="create-content" class="create-content">
@@ -97,6 +97,19 @@
         </div>
 
     </div>
-    <script src="../Controll/indexScript.js"></script>
+    <header class="create-content-header" id="create-content-header" style="display: none;">
+        <div class="create-container" id="create-container">
+            <h1 class="task-title">write your question</h1>
+            <label class="label">
+                <textarea class="input-field-title" name="question" id="input-question-title"></textarea>
+            </label>
+            <h3 class="task">write your question</h3>
+            <label class="label">
+                <textarea class="input-field" name="question" id="input-question"></textarea>
+            </label>
+            <button class="publish-button" id="publish-button">Publish</button>
+        </div>
+    </header>
+    <script src="../Controll/homeScript.js" type="module"></script>
 </body>
 </html>
