@@ -38,23 +38,24 @@ register_btn.addEventListener('click', e => {
 })
 
 log_sign_btn.addEventListener('click', e => {
+    let flag = true
     if (15 < username.value.lenght < 5 && /^(?!.*\s)[a-z0-9_-]+$/.test(username.value)) {
         username.classList.add('fieldset-error');
         username.classList.remove('fieldset');
-        
-         if (15 < password.value.lenght < 5 && /^(?!.*\s)[A-Za-z0-9]+$/.test(password.value) != 1) {
-            password.classList.add('fieldset-error');
-            password.classList.remove('fieldset');
-            return;
-        }
-        
-        return;
+        frag = false
+    } else {
+        username.classList.remove('fieldset-error');
+        username.classList.add('fieldset');
     }
-    if (15 < password.value.lenght < 5 && /^(?!.*\s)[A-Za-z0-9]+$/.test(password.value) != 1) {
+    if (15 < password.value.lenght < 5 && /^(?!.*\s)[A-Za-z0-9]+$/.test(password.value)) {
         password.classList.add('fieldset-error');
         password.classList.remove('fieldset');
-        return;
+        flag = false
+    } else {
+        password.classList.remove('fieldset-error');
+        password.classList.add('fieldset');
     }
+    if (!flag){return};
     if (login_btn.classList.contains('active-btn')) {
         if (username.value != "" && password.value != "") {
             const url = new URL(window.location.href);
