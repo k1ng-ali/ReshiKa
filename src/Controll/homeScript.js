@@ -7,6 +7,7 @@ let createHeader;
 let inputQuestion;
 let publishBtn;
 let inputQuestionTitle;
+let crtcontainer;
 
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     inputQuestion = document.getElementById('input-question');
     publishBtn = document.getElementById('publish-button');
     inputQuestionTitle = document.getElementById('input-question-title');
-
+    crtcontainer =  document.getElementById('create-con
 
 
     let LastScrollTop = 0;
