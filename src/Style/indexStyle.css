@@ -114,6 +114,19 @@
     width: 100%;
 }
 
+
+.fieldset-error {
+    display: flex;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 30px;
+    border: #b06d76 solid 1px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 2px #eaeaea;
+}
+
+
 .fieldset {
     display: flex;
     width: 100%;
