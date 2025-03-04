@@ -41,11 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
         LastScrollTop = scrollTop;
     })
 
-    crtcontainer.addEventListener("click", function() {
-        createHeader.style="display:none";
-        inputQuestion.value = "";
-        inputQuestionTitle.value = "";
-    }
 
     createBtn.addEventListener("click", function() {
         createHeader.style="display:flex";
