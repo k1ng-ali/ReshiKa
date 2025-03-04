@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     inputQuestion = document.getElementById('input-question');
     publishBtn = document.getElementById('publish-button');
     inputQuestionTitle = document.getElementById('input-question-title');
-    crtcontainer =  document.getElementById('create-con
+    crtcontainer =  document.getElementById('create-content-header');
 
 
     let LastScrollTop = 0;
@@ -40,6 +40,12 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         LastScrollTop = scrollTop;
     })
+
+    crtcontainer.addEventListener("click", function() {
+        createHeader.style="display:none";
+        inputQuestion.value = "";
+        inputQuestionTitle.value = "";
+    }
 
     createBtn.addEventListener("click", function() {
         createHeader.style="display:flex";
