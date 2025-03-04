@@ -7,7 +7,6 @@ let createHeader;
 let inputQuestion;
 let publishBtn;
 let inputQuestionTitle;
-let crtcontainer;
 
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -22,8 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     inputQuestion = document.getElementById('input-question');
     publishBtn = document.getElementById('publish-button');
     inputQuestionTitle = document.getElementById('input-question-title');
-    crtcontainer =  document.getElementById('create-content-header');
-
 
     let LastScrollTop = 0;
     const SecondHeader = document.getElementById("secondHeader");
@@ -80,7 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 </nav>
             </div>
             `
-        }
         container.innerHTML += `
           <div class="content">
                 <h3 class="task-title">Разработка REST API</h3>
@@ -143,5 +139,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 </nav>
             </div>
             `
+        }
     }
 })
