@@ -47,7 +47,7 @@ log_sign_btn.addEventListener('click', e => {
         username.classList.remove('fieldset-error');
         username.classList.add('fieldset');
     }
-    if (15 < password.value.length  || username.value.length  < 5 || !/^(?!.*\s)[A-Za-z0-9]+$/.test(password.value)) {
+    if (15 < password.value.length  || password.value.length  < 5 || !/^(?!.*\s)[A-Za-z0-9]+$/.test(password.value)) {
         password.classList.add('fieldset-error');
         password.classList.remove('fieldset');
         flag = false
