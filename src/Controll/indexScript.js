@@ -39,7 +39,7 @@ register_btn.addEventListener('click', e => {
 
 log_sign_btn.addEventListener('click', e => {
     let flag = true
-    if (15 < username.value.lenght || username.value.lenght < 5 || !/^(?!.*\s)[a-z0-9_-]+$/.test(username.value)) {
+    if (15 < username.value.length  || username.value.length  < 5 || !/^(?!.*\s)[a-z0-9_-]+$/.test(username.value)) {
         username.classList.add('fieldset-error');
         username.classList.remove('fieldset');
         frag = false
@@ -47,7 +47,7 @@ log_sign_btn.addEventListener('click', e => {
         username.classList.remove('fieldset-error');
         username.classList.add('fieldset');
     }
-    if (15 < password.value.lenght || username.value.lenght < 5 || !/^(?!.*\s)[A-Za-z0-9]+$/.test(password.value)) {
+    if (15 < password.value.length  || username.value.length  < 5 || !/^(?!.*\s)[A-Za-z0-9]+$/.test(password.value)) {
         password.classList.add('fieldset-error');
         password.classList.remove('fieldset');
         flag = false
