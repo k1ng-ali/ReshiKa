@@ -79,5 +79,67 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
             `
         }
+        container.innerHTML += `
+          <div class="content">
+                <h3 class="task-title">Разработка REST API</h3>
+                <div class="task-user">
+                    <p class="user-task"> user_12 </p>
+                    <p class="data-task"> 5 min ago </p>
+                </div>
+                <p class="task"> Как создать REST API для веб-приложения? Какие инструменты и технологии лучше использовать?</p>
+                <nav class="task-info">
+                    <p class="task-data">109 views</p>
+                    <li class="answers">answers</li>
+                </nav>
+            </div>
+            <div class="content">
+                <h3 class="task-title">Оптимизация сортировки</h3>
+                <div class="task-user">
+                    <p class="user-task"> user_6 </p>
+                    <p class="data-task"> 21.12.24 </p>
+                </div>
+                <p class="task"> Какой алгоритм сортировки лучше использовать для обработки больших массивов данных?</p>
+                <nav class="task-info">
+                    <p class="task-data">25 views</p>
+                    <li class="answers">answers</li>
+                </nav>
+            </div>
+            <div class="content">
+                <h3 class="task-title">Лучшие практики безопасности</h3>
+                <div class="task-user">
+                    <p class="user-task"> user_2 </p>
+                    <p class="data-task"> 5 days ago </p>
+                </div>
+                <p class="task">  Как защитить веб-приложение от атак SQL-инъекций и XSS?</p>
+                <nav class="task-info">
+                    <p class="task-data">32k views</p>
+                    <li class="answers">answers</li>
+                </nav>
+            </div>
+            <div class="content">
+                <h3 class="task-title"> React vs Vue</h3>
+                <div class="task-user">
+                    <p class="user-task"> user_46 </p>
+                    <p class="data-task"> 13.01.25 </p>
+                </div>
+                <p class="task">   Какие плюсы и минусы у React и Vue? Какой фреймворк выбрать для нового проекта?</p>
+                <nav class="task-info">
+                    <p class="task-data">97 views</p>
+                    <li class="answers">answers</li>
+                </nav>
+            </div>
+            <div class="content">
+                <h3 class="task-title">Написание Telegram-бота</h3>
+                <div class="task-user">
+                    <p class="user-task"> user_1 </p>
+                    <p class="data-task"> 9 hours ago </p>
+                </div>
+                <p class="task">  Как создать Telegram-бота на Python с использованием библиотеки aiogram?</p>
+                <nav class="task-info">
+                    <p class="task-data">24 views</p>
+                    <li class="answers">answers</li>
+                </nav>
+            </div>
+            `
     }
 })
