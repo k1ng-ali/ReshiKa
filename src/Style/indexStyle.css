@@ -138,10 +138,20 @@
     height: 50px;
     border-radius: 10px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
+.tg-login-btn {
+    background-color: #4f9ee5;
+    border: 0;
+    margin-top: 0;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 .form-login-button:hover {
     background-color: #2b2b2b;
 }
+.tg-login-btn:hover {
+    background-color: #4577a5;
+}
+
 
