@@ -7,6 +7,8 @@ let createHeader;
 let inputQuestion;
 let publishBtn;
 let inputQuestionTitle;
+let crtContentClose;
+let PrimaryContent;
 
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -21,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     inputQuestion = document.getElementById('input-question');
     publishBtn = document.getElementById('publish-button');
     inputQuestionTitle = document.getElementById('input-question-title');
-
-
+    crtContentClose = document.getElementById('crt-content-close');
+    PrimaryContent = document.getElementById('primary-content-1');
 
     let LastScrollTop = 0;
     const SecondHeader = document.getElementById("secondHeader");
@@ -59,6 +61,72 @@ document.addEventListener("DOMContentLoaded", () => {
             updateContent(contentContainer);
             createHeader.style="display:none";
         }
+    })
+
+    PrimaryContent.addEventListener("click", function() {
+        PrimaryContent.innerHTML += `
+            <div class="answers">
+                <div class="answer">
+                    <div class="task-user">
+                        <p class="user-task usr2">user 1</p>
+                        <p class="data-task">3 min ago</p>
+                    </div>
+                    <p class="task">the answer to question</p>
+                    <nav class="task-info">
+                        <p class="task-data">43 likes</p>
+                    </nav>
+                </div>
+                <div class="answer">
+                    <div class="task-user">
+                        <p class="user-task usr3">user 2</p>
+                        <p class="data-task">27 min ago</p>
+                    </div>
+                    <p class="task">Second answer to question</p>
+                    <nav class="task-info">
+                        <p class="task-data">4 likes</p>
+                    </nav>
+                </div>
+            </div>
+            `
+    })
+
+    function toggleElement (ContainerSelector, elementClass) {
+        let containerElement = document.querySelector(ContainerSelector);
+        let element = containerElement.querySelector(`.${elementClass}`);
+
+        if (element) {
+            element.remove();
+        }
+        else {
+            ContainerSelector.innerHTML += `
+            <div class="answers">
+                <div class="answer">
+                    <div class="task-user">
+                        <p class="user-task usr2">user 1</p>
+                        <p class="data-task">3 min ago</p>
+                    </div>
+                    <p class="task">the answer to question</p>
+                    <nav class="task-info">
+                        <p class="task-data">43 likes</p>
+                    </nav>
+                </div>
+                <div class="answer">
+                    <div class="task-user">
+                        <p class="user-task usr3">user 2</p>
+                        <p class="data-task">27 min ago</p>
+                    </div>
+                    <p class="task">Second answer to question</p>
+                    <nav class="task-info">
+                        <p class="task-data">4 likes</p>
+                    </nav>
+                </div>
+            </div>
+            `
+        }
+    }
+
+    crtContentClose.addEventListener("click", function() {
+        createHeader.style="display:none";
     })
 
     function updateContent (container) {

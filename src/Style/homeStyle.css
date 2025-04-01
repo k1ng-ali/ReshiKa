@@ -123,6 +123,10 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+.crt-button {
+
+}
+
 .create-content-button:hover {
     background-color: #2b2b2b;
     transform: scale(1.01);
@@ -160,6 +164,11 @@
     transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
+.answer {
+    margin-left: 30px;
+    border-top: 1px #b5b5b5 solid;
+}
+
 .content:hover {
     background-color: #f4f4f4;
     transform: scale(1.01);
@@ -186,6 +195,16 @@
     font-size: 0.8rem;
     margin-top: 7px;
     margin-bottom: 7px;
+}
+
+.usr2 {
+    background-color: #d5ae5a;
+    color: #f8e6c0;
+}
+
+.usr3 {
+    background-color: #50b15b;
+    color: #c2f8c0;
 }
 
 .data-task {
@@ -308,3 +327,11 @@
 .publish-button:hover {
     background-color: #2b2b2b;
 }
+.crt-container-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+

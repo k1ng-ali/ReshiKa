@@ -34,7 +34,7 @@
     </header>
     <div id="container" class="container">
         <div class="content-container" id="content-container">
-            <div class="content">
+            <div class="content" id="primary-content-1">
                 <h3 class="task-title">Разработка REST API</h3>
                 <div class="task-user">
                     <p class="user-task"> user_12 </p>
@@ -46,7 +46,7 @@
                     <li class="answers">answers</li>
                 </nav>
             </div>
-            <div class="content">
+            <div class="content" id="primary-content-2">
                 <h3 class="task-title">Оптимизация сортировки</h3>
                 <div class="task-user">
                     <p class="user-task"> user_6 </p>
@@ -58,7 +58,7 @@
                     <li class="answers">answers</li>
                 </nav>
             </div>
-            <div class="content">
+            <div class="content" id="primary-content-3">
                 <h3 class="task-title">Лучшие практики безопасности</h3>
                 <div class="task-user">
                     <p class="user-task"> user_2 </p>
@@ -70,7 +70,7 @@
                     <li class="answers">answers</li>
                 </nav>
             </div>
-            <div class="content">
+            <div class="content" id="primary-content-4">
                 <h3 class="task-title"> React vs Vue</h3>
                 <div class="task-user">
                     <p class="user-task"> user_46 </p>
@@ -82,7 +82,7 @@
                     <li class="answers">answers</li>
                 </nav>
             </div>
-            <div class="content">
+            <div class="content" id="primary-content-5">
                 <h3 class="task-title">Написание Telegram-бота</h3>
                 <div class="task-user">
                     <p class="user-task"> user_1 </p>
@@ -99,7 +99,11 @@
     </div>
     <header class="create-content-header" id="create-content-header" style="display: none;">
         <div class="create-container" id="create-container">
-            <h1 class="task-title">write your question</h1>
+            <div class="crt-container-title">
+                <H1>Creat Question</H1>
+                <button class="create-content-button crt-button" id="crt-content-close">X</button>
+            </div>
+            <h2 class="task-title">write Title</h2>
             <label class="label">
                 <textarea class="input-field-title" name="question" id="input-question-title"></textarea>
             </label>

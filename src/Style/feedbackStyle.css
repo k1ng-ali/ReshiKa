@@ -1,0 +1,38 @@
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    border: #b5b5b5 solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: #b5b5b5 solid 2px;
+    border-radius: 10px;
+}
+
+.message-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.message {
+    display: flex;
+    border: #b5b5b5 solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    margin-right: 20px;
+}
